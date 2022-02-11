@@ -1,0 +1,5 @@
+gpio.c:11:6:gpio_setup	8	static
+gpio.c:17:6:gpio_setup_porta	4	static
+gpio.c:28:6:gpio_setup_portb	4	static
+gpio.c:39:6:gpio_setup_porti	4	static
+gpio.c:49:6:blink_ld1	16	static
