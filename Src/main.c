@@ -13,7 +13,7 @@ int main(void) {
 	uint8_t myArray2[] = "Write into receive buffer of size 8. When it's full, will send it back\r\n";
 	usart_dma_sendArray(USART1, myArray, sizeof(myArray)-1); //without end of line char
 
-	while(!usart_dma_tx_status_finished); //the the first line finish sending the greeting to load the second line
+	while(!usart_dma_tx_status_finished); // the first line finish sending the greeting to load the second line
 
 	usart_dma_sendArray(USART1, myArray2, sizeof(myArray2)-1); //without end of line char
 	usart_dma_receiveArray(USART1, uart_dma_receiveBuffer, 8); //when buffer is received, it will be send back by DMA by triggering software interrupt. See nvic.c
