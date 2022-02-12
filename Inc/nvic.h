@@ -4,6 +4,11 @@
 #include "core_cm7.h"
 #include "usart.h"
 
+#define SoftwareIRQnHandler(void) CAN2_TX_IRQHandler(void)
+
+enum redefinitions{
+	SoftwareIRQn = CAN2_TX_IRQn
+};
 
 void nvic_setup(void);
 

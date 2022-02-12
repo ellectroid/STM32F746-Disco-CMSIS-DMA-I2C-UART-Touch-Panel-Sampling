@@ -873,23 +873,23 @@ LOAD c:/st/stm32cubeide/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externalto
 LOAD c:/st/stm32cubeide/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/st/stm32cubeide/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x0000000000000000     0x1971
+.debug_info     0x0000000000000000     0x198a
  .debug_info    0x0000000000000000      0x19e ./Src/dma.o
  .debug_info    0x000000000000019e      0x243 ./Src/gpio.o
  .debug_info    0x00000000000003e1      0x2d7 ./Src/main.o
- .debug_info    0x00000000000006b8      0xa93 ./Src/nvic.o
- .debug_info    0x000000000000114b      0x395 ./Src/rcc.o
- .debug_info    0x00000000000014e0      0x46f ./Src/usart.o
- .debug_info    0x000000000000194f       0x22 ./Startup/startup_stm32f746nghx.o
+ .debug_info    0x00000000000006b8      0xaac ./Src/nvic.o
+ .debug_info    0x0000000000001164      0x395 ./Src/rcc.o
+ .debug_info    0x00000000000014f9      0x46f ./Src/usart.o
+ .debug_info    0x0000000000001968       0x22 ./Startup/startup_stm32f746nghx.o
 
-.debug_abbrev   0x0000000000000000      0x6f6
+.debug_abbrev   0x0000000000000000      0x70b
  .debug_abbrev  0x0000000000000000       0xe7 ./Src/dma.o
  .debug_abbrev  0x00000000000000e7      0x12c ./Src/gpio.o
  .debug_abbrev  0x0000000000000213      0x125 ./Src/main.o
- .debug_abbrev  0x0000000000000338      0x191 ./Src/nvic.o
- .debug_abbrev  0x00000000000004c9       0xf6 ./Src/rcc.o
- .debug_abbrev  0x00000000000005bf      0x125 ./Src/usart.o
- .debug_abbrev  0x00000000000006e4       0x12 ./Startup/startup_stm32f746nghx.o
+ .debug_abbrev  0x0000000000000338      0x1a6 ./Src/nvic.o
+ .debug_abbrev  0x00000000000004de       0xf6 ./Src/rcc.o
+ .debug_abbrev  0x00000000000005d4      0x125 ./Src/usart.o
+ .debug_abbrev  0x00000000000006f9       0x12 ./Startup/startup_stm32f746nghx.o
 
 .debug_aranges  0x0000000000000000      0x1a8
  .debug_aranges
@@ -916,7 +916,7 @@ LOAD c:/st/stm32cubeide/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externalto
  .debug_ranges  0x00000000000000d0       0x50 ./Src/usart.o
  .debug_ranges  0x0000000000000120       0x20 ./Startup/startup_stm32f746nghx.o
 
-.debug_macro    0x0000000000000000    0x1bab6
+.debug_macro    0x0000000000000000    0x1bac2
  .debug_macro   0x0000000000000000       0xc7 ./Src/dma.o
  .debug_macro   0x00000000000000c7      0xaae ./Src/dma.o
  .debug_macro   0x0000000000000b75       0x3b ./Src/dma.o
@@ -934,12 +934,12 @@ LOAD c:/st/stm32cubeide/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externalto
  .debug_macro   0x0000000000002506       0x19 ./Src/dma.o
  .debug_macro   0x000000000000251f    0x190f0 ./Src/dma.o
  .debug_macro   0x000000000001b60f       0xc7 ./Src/gpio.o
- .debug_macro   0x000000000001b6d6      0x10c ./Src/main.o
- .debug_macro   0x000000000001b7e2       0x2e ./Src/main.o
- .debug_macro   0x000000000001b810       0x43 ./Src/main.o
- .debug_macro   0x000000000001b853       0xd5 ./Src/nvic.o
- .debug_macro   0x000000000001b928       0xc7 ./Src/rcc.o
- .debug_macro   0x000000000001b9ef       0xc7 ./Src/usart.o
+ .debug_macro   0x000000000001b6d6      0x112 ./Src/main.o
+ .debug_macro   0x000000000001b7e8       0x2e ./Src/main.o
+ .debug_macro   0x000000000001b816       0x43 ./Src/main.o
+ .debug_macro   0x000000000001b859       0xdb ./Src/nvic.o
+ .debug_macro   0x000000000001b934       0xc7 ./Src/rcc.o
+ .debug_macro   0x000000000001b9fb       0xc7 ./Src/usart.o
 
 .debug_line     0x0000000000000000     0x1caf
  .debug_line    0x0000000000000000      0x3f4 ./Src/dma.o
@@ -950,20 +950,20 @@ LOAD c:/st/stm32cubeide/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externalto
  .debug_line    0x00000000000016b4      0x577 ./Src/usart.o
  .debug_line    0x0000000000001c2b       0x84 ./Startup/startup_stm32f746nghx.o
 
-.debug_str      0x0000000000000000    0x9b0d4
+.debug_str      0x0000000000000000    0x9b122
  .debug_str     0x0000000000000000    0x9a2d6 ./Src/dma.o
                                       0x9a47e (size before relaxing)
  .debug_str     0x000000000009a2d6       0x91 ./Src/gpio.o
                                       0x9a4ce (size before relaxing)
- .debug_str     0x000000000009a367      0x39a ./Src/main.o
-                                      0x9a80a (size before relaxing)
- .debug_str     0x000000000009a701      0x78e ./Src/nvic.o
-                                      0x9acb2 (size before relaxing)
- .debug_str     0x000000000009ae8f      0x139 ./Src/rcc.o
+ .debug_str     0x000000000009a367      0x3cd ./Src/main.o
+                                      0x9a83d (size before relaxing)
+ .debug_str     0x000000000009a734      0x7a9 ./Src/nvic.o
+                                      0x9ad00 (size before relaxing)
+ .debug_str     0x000000000009aedd      0x139 ./Src/rcc.o
                                       0x9a5bf (size before relaxing)
- .debug_str     0x000000000009afc8       0xdb ./Src/usart.o
+ .debug_str     0x000000000009b016       0xdb ./Src/usart.o
                                       0x9a5ad (size before relaxing)
- .debug_str     0x000000000009b0a3       0x31 ./Startup/startup_stm32f746nghx.o
+ .debug_str     0x000000000009b0f1       0x31 ./Startup/startup_stm32f746nghx.o
                                          0x5e (size before relaxing)
 
 .comment        0x0000000000000000       0x53

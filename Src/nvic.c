@@ -8,8 +8,8 @@ void nvic_setup(void) {
 	NVIC_SetPriority(DMA2_Stream7_IRQn, 16U);
 	NVIC_EnableIRQ(DMA2_Stream7_IRQn);
 
-	NVIC_SetPriority(CAN2_TX_IRQn, 16U);  //CAN2_TX Interrupt is used for software interrupt only!!!
-	NVIC_EnableIRQ(CAN2_TX_IRQn);
+	NVIC_SetPriority(SoftwareIRQn, 16U);  //CAN2_TX Interrupt is used for software interrupt only!!!
+	NVIC_EnableIRQ(SoftwareIRQn);
 
 }
 
@@ -30,7 +30,7 @@ void DMA2_Stream7_IRQHandler(void) {
 	}
 }
 
-void CAN2_TX_IRQHandler(void){
-	NVIC_ClearPendingIRQ(CAN2_TX_IRQn);
+void SoftwareIRQnHandler(void){
+	NVIC_ClearPendingIRQ(SoftwareIRQn);
 	usart_dma_sendArray(USART1, uart_dma_receiveBuffer, 8); //send received data back
 }
