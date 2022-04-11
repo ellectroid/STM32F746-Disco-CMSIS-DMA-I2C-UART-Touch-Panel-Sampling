@@ -7,11 +7,13 @@
 void gpio_setup_porta(void);
 void gpio_setup_portb(void);
 void gpio_setup_porti(void);
+void gpio_setup_porth(void);
 
 void gpio_setup(void) {
 	gpio_setup_porta();
 	gpio_setup_portb();
 	gpio_setup_porti();
+	gpio_setup_porth();
 }
 
 void gpio_setup_porta(void) {
@@ -44,6 +46,27 @@ void gpio_setup_porti(void) {
 	GPIOI->OTYPER &= ~(GPIO_OTYPER_OT_1); //PI1 output push-pull
 	GPIOI->OSPEEDR &= ~(GPIO_OSPEEDR_OSPEEDR1); //PI1 output speed very low
 	GPIOI->PUPDR &= ~(GPIO_PUPDR_PUPDR1); //PI1 no pull-up no pull-down
+}
+
+void gpio_setup_porth(void) {
+	/*
+	 * PH7 I2C3 SCL AF4
+	 */
+	GPIOH->MODER = (GPIOH->MODER & ~(GPIO_MODER_MODER7_0)) | (GPIO_MODER_MODER7_1); //PH7 set to alternate function
+	GPIOH->AFR[0] = (GPIOH->AFR[0] & ~(0xF << GPIO_AFRL_AFRL7_Pos)) | (0x04 << GPIO_AFRL_AFRL7_Pos); //PH7 to AF4
+	GPIOH->OTYPER |= (GPIO_OTYPER_OT_7); //PH7 output open drain
+	GPIOH->OSPEEDR |= (GPIO_OSPEEDR_OSPEEDR7); //PH7 output speed very high
+	GPIOH->PUPDR &= ~(GPIO_PUPDR_PUPDR7); //PH7 no pull-up no pull-down
+
+	/*
+	 * PH8 I2C3 SDA AF4
+	 */
+	GPIOH->MODER = (GPIOH->MODER & ~(GPIO_MODER_MODER8_0)) | (GPIO_MODER_MODER8_1); //PH8 set to alternate function
+	GPIOH->AFR[1] = (GPIOH->AFR[1] & ~(0xF << GPIO_AFRH_AFRH0_Pos)) | (0x04 << GPIO_AFRH_AFRH0_Pos); //PH8 to AF4
+	GPIOH->OTYPER |= (GPIO_OTYPER_OT_8); //PH8 output open drain
+	GPIOH->OSPEEDR |= (GPIO_OSPEEDR_OSPEEDR8); //PH8 output speed very high
+	GPIOH->PUPDR &= ~(GPIO_PUPDR_PUPDR8); //PH8 no pull-up no pull-down
+
 }
 
 void blink_ld1(void) {

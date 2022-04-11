@@ -9,5 +9,8 @@
 #include "gpio.h"
 #include "nvic.h"
 #include "dma.h"
+#include "i2c.h"
+#include "systick.h"
+#include "bsctmr.h"
 
 #endif /* MAIN_H_ */

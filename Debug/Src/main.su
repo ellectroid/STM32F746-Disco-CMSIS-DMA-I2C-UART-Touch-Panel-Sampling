@@ -1,1 +1,2 @@
-main.c:3:5:main	136	static
+main.c:5:5:main	336	static
+main.c:77:6:system_hw_setup	8	static

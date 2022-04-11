@@ -1,0 +1,4 @@
+systick.c:5:6:systick_setup	16	static
+systick.c:13:6:SysTick_Handler	4	static
+systick.c:17:10:millis	4	static
+systick.c:21:6:system_msdelay	24	static

@@ -2,6 +2,10 @@ core_cm7.h:1896:22:__NVIC_EnableIRQ	16	static
 core_cm7.h:1985:22:__NVIC_ClearPendingIRQ	16	static
 core_cm7.h:2024:22:__NVIC_SetPriority	16	static
 nvic.c:3:6:nvic_setup	8	static
-nvic.c:16:6:DMA2_Stream2_IRQHandler	8	static
-nvic.c:25:6:DMA2_Stream7_IRQHandler	8	static
-nvic.c:33:6:CAN2_TX_IRQHandler	8	static
+nvic.c:28:6:DMA2_Stream2_IRQHandler	4	static
+nvic.c:34:6:DMA2_Stream7_IRQHandler	4	static
+nvic.c:40:6:DMA1_Stream4_IRQHandler	4	static
+nvic.c:46:6:DMA1_Stream2_IRQHandler	8	static
+nvic.c:57:6:TIM6_DAC_IRQHandler	8	static
+nvic.c:63:6:TIM7_IRQHandler	8	static
+nvic.c:68:6:I2C3_EV_IRQHandler	4	static

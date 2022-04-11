@@ -1,11 +1,12 @@
-# STM32F746-Minimal-UART-DMA-Driver-Demo
-Minimal DMA-based UART driver for STM32F746
+# STM32F746-DISCO-DMA-I2C-DMA-UART-TOUCH-PANEL-SAMPLING
+Minimal I2C/UART DMA demo for STM32F746-DISCO
 
-Minimalist DMA-based UART driver demo for STM32F746-Disco UART1 ST-Link COM Port
+UART1 ST-Link COM Port
 
-Clock: default, no changes (16MHz HSI).
+Clock: 216MHz.
 USART1 is the USART connected to ST-Link that makes virtual COM port on PC.
-
+I2C3 is connected to FT5336 capacitive touch panel.
+TIM6 and TIM7 provide regular touch panel scanning.
 
 This project is a proof of concept (that I can).
 

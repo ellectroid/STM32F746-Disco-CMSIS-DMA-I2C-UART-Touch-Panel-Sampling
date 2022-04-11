@@ -13,8 +13,8 @@ void usart_disable_tx(USART_TypeDef *USART);
 void usart_enable_rx(USART_TypeDef *USART);
 void usart_disable_rx(USART_TypeDef *USART);
 
-uint8_t usart_dma_rx_status_finished;
-uint8_t usart_dma_tx_status_finished;
+//uint8_t usart_dma_rx_status_finished;
+//uint8_t usart_dma_tx_status_finished;
 
 uint8_t uart_dma_receiveBuffer[8];
 

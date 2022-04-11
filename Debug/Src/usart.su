@@ -5,5 +5,5 @@ usart.c:12:6:usart_disable_tx	16	static
 usart.c:15:6:usart_enable_rx	16	static
 usart.c:18:6:usart_disable_rx	16	static
 usart.c:22:6:usart_dma_setup	16	static
-usart.c:44:6:usart_dma_sendArray	24	static
-usart.c:77:6:usart_dma_receiveArray	24	static
+usart.c:84:6:usart_dma_sendArray	24	static
+usart.c:97:6:usart_dma_receiveArray	24	static

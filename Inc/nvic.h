@@ -2,13 +2,9 @@
 #define NVIC_H_
 #include "stm32f746xx.h"
 #include "core_cm7.h"
+#include "i2c.h"
+#include "bsctmr.h"
 #include "usart.h"
-
-#define SoftwareIRQnHandler(void) CAN2_TX_IRQHandler(void)
-
-enum redefinitions{
-	SoftwareIRQn = CAN2_TX_IRQn
-};
 
 void nvic_setup(void);
 
