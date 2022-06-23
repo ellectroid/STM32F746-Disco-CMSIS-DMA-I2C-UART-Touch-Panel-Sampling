@@ -70,7 +70,7 @@ void i2c_dma_setup(I2C_TypeDef *I2C) {
 	DMA1_Stream2->FCR = 0x21; //reset FIFO control register
 	while (DMA1_Stream2->CR & DMA_SxCR_EN); //wait until stream is actually disabled
 
-	DMA2->LIFCR |= (1U << 16U) | (0x0F << 18U);  //clear DMA2_Stream2 flags
+	DMA1->LIFCR |= (1U << 16U) | (0x0F << 18U);  //clear DMA1_Stream2 flags
 
 	DMA1_Stream2->PAR = (uint32_t) (&(I2C->RXDR)); //set peripheral port address
 
